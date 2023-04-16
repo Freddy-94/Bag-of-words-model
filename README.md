@@ -12,7 +12,7 @@ Notice that the source code must be "outside" the folder "InputTexts" having the
 
 ## Relevant functions:
 
-1.- clean_data -> "clean" the input text data 
-2.- vectorization_frequencies -> vectorization of input texts, as vectors of frequencies 
-3.- cos_similarities -> Computation of the cosine similarity between vectors (input texts represented by vectors)
+1. clean_data -> "clean" the input text data 
+2. vectorization_frequencies -> vectorization of input texts, as vectors of frequencies 
+3. cos_similarities -> Computation of the cosine similarity between vectors (input texts represented by vectors)
 
