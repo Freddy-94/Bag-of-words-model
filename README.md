@@ -16,3 +16,16 @@ Notice that the source code must be "outside" the folder "InputTexts" that has t
 2. vectorization_frequencies -> vectorization of input texts, as vectors of frequencies 
 3. cos_similarities -> Computation of the cosine similarity between vectors (input texts represented by vectors)
 
+# Songs:
+
+1. "La Llorona"              -> https://www.youtube.com/watch?v=5pqPFMVAIeM
+2. "La Ixhuateca"            -> https://www.youtube.com/watch?v=VHRDLv5Y9Lg
+3. "La niña de Guatemala"    -> https://www.youtube.com/watch?v=XAAP6bfNGK4
+
+
+## References:
+1. https://en.wikipedia.org/wiki/Vector_space_model
+2. https://en.wikipedia.org/wiki/Tf%E2%80%93idf
+3. https://en.wikipedia.org/wiki/Bag-of-words_model
+4. https://en.wikipedia.org/wiki/Cosine_similarity
+5. https://en.wikipedia.org/wiki/Information_retrieval
