@@ -1,7 +1,7 @@
 """
 Author: Alfredo Bernal Luna
 Date: April 03rd 2023
-Theme: Bag-of-words model implementation - NLP class
+Project: Bag-of-words model implementation - NLP class
 
 Relevant functions:
 
@@ -162,13 +162,21 @@ def tf(list_of_all_clean_texts):
         freq_text_dict = frequencies(clean_text_list)
         print(f"==Term frequencies for text: {freq_text_dict}==\n")
         for word in freq_text_dict:
-            print(f"The tf for the word {word} is of: {freq_text_dict[word]/len(freq_text_dict)}\n")
+            print(f"The tf for the word '{word}' is of: {freq_text_dict[word]/len(freq_text_dict)}\n")
                         
-def idf():
+def idf(list_of_all_clean_texts):
     print("\n============================================================================")
     print(f"             Start of idf's (inverse document frequencies) computation:      ")
     print("============================================================================\n")
-        
+    vocabulary = vocabulary_creation(list_of_all_clean_texts)
+    N = len(list_of_all_clean_texts)     # total number of documents in the corpus
+    for word in vocabulary:
+        idf_word = 0
+        for clean_text_list in list_of_all_clean_texts:
+            if word in clean_text_list:
+                idf_word += 1
+        idf_word = math.log(N/(1+idf_word)) # plus one in the denominator, in case the term is not in the corpus (this not happen, as the corpus is the vocabulary)
+        print(f"The idf for the word '{word}' is of: {idf_word}\n")            
     
 def main():
     """
@@ -223,8 +231,10 @@ def main():
     """
     cos_similarities(frequencies_vectors)
     tf(clean_texts)
+    idf(clean_texts)
+    
     
 if __name__ == '__main__':
     main()
     
-    
+      
