@@ -8,7 +8,7 @@ This program implements the Bag-of-words-model (https://en.wikipedia.org/wiki/Ba
 
 In your terminal run the command: python BagOfWordsM.py
 
-Notice that the source code must be "outside" the folder "InputTexts" having the texts we want to analyze.
+Notice that the source code must be "outside" the folder "InputTexts" that has the texts we want to analyze.
 
 ## Relevant functions:
 
